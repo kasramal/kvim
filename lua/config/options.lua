@@ -9,4 +9,7 @@ vim.opt.expandtab = true
 
 vim.opt.signcolumn = "yes"
 
-vim.opt.termguicolors = true
+
+if vim.fn.has("clipboard") == 1 then
+    vim.opt.clipboard = "unnamedplus"
+end
