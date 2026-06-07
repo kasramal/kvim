@@ -7,3 +7,8 @@ map("n", "<leader>ff",
 
 map("n", "<leader>fg",
     require("telescope.builtin").live_grep)
+
+map("n", "<leader>e", ":Neotree toggle<CR>", {
+    silent = true,
+    desc = "Toggle Neo-tree",
+})
